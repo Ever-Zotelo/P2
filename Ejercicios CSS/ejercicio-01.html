@@ -5,11 +5,24 @@
 <title>Ejercicio 1. El botón y sus estados</title>
 <style>
     .boton {
-        background: #2196f3;
+        background-color: #2196f3;
         color:white;
         border: none;
         border-radius: 8px;
         padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600px;
+        cursor: pointer;
+    }
+
+    .boton:hover:disabled {
+        background-color: blue;
+        cursor: pointer;
+    }
+
+    .boton:focus-visible {
+        outline: 3px solid #000;
+        outline-offset: 2px;
     }
 </style>
 </head>

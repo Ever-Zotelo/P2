@@ -4,6 +4,44 @@
 <meta charset="utf-8">
 <title>Ejercicio 12. El panel de estadísticas</title>
 <style>
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+
+  .panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  .dato {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dato strong {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4f46e5;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .dato span {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
 </style>
 </head>
 <body>
