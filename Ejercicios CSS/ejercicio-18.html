@@ -4,6 +4,54 @@
 <meta charset="utf-8">
 <title>Ejercicio 18. El acordeón de preguntas</title>
 <style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    max-width: 500px;
+  }
+
+  .faq {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .faq summary {
+    padding: 14px 16px;
+    font-weight: 600;
+    color: #1f2937;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .faq summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq summary::before {
+    content: "+";
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4f46e5;
+  }
+
+  .faq[open] summary::before {
+    content: "−";
+  }
+
+  .faq p {
+    margin: 0;
+    padding: 0 16px 14px 16px;
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 </style>
 </head>
 <body>

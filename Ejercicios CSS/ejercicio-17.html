@@ -4,6 +4,62 @@
 <meta charset="utf-8">
 <title>Ejercicio 17. La tabla de precios</title>
 <style>
+  .planes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    align-items: center;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .plan h3 {
+    text-transform: uppercase;
+    color: #6b7280;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+  }
+
+  .plan .precio {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;
+    margin: 0 0 16px 0;
+  }
+
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+  }
+
+  .plan li {
+    padding: 6px 0;
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+
+  .plan .elegir {
+    display: block;
+    padding: 10px;
+    background-color: #eff6ff;
+    color: #4f46e5;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+
+  .plan.destacado {
+    border: 2px solid #4f46e5;
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15);
+  }
 </style>
 </head>
 <body>

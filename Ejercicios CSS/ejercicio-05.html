@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Ejercicio 5. La lista de tareas</title>
-<style>
-  
-</style>
+  <meta charset="utf-8">
+  <title>Ejercicio 5. La lista de tareas</title>
+  <style>
+    ul.tareas {
+      list-style: none; /* Elimina las viñetas/puntos por defecto de la lista */
+      padding: 0;       
+      margin: 0;
+    }
+
+    .tareas li {
+      padding: 12px 0;             
+      border-bottom: 1px solid #e5e7eb; /* Línea fina divisoria entre tareas */
+    }
+
+    .tareas label {
+      display: flex;       /* Alinea casilla y texto en horizontal */
+      align-items: center;
+      gap: 10px;           /* Hueco de separación entre la casilla y el texto */
+      cursor: pointer;     /* Permite hacer clic en todo el elemento */
+    }
+
+    .tareas input[type="checkbox"] {
+      cursor: pointer; /* Puntero de mano sobre la casilla de selección */
+    }
+
+    /* Aplica el tachado y color gris cuando el checkbox dentro del li está marcado (checked) */
+    .tareas li:has(input:checked) {
+      text-decoration: line-through; /* Tacha el texto de la tarea hecha */
+      color: #9ca3af;                /* Cambia el texto a color gris */
+    }
+  </style>
 </head>
 <body>
-<ul class="tareas">
-  <li><label><input type="checkbox" checked><span>Enviar el presupuesto</span></label></li>
-  <li><label><input type="checkbox"><span>Llamar al cliente</span></label></li>
-  <li><label><input type="checkbox"><span>Revisar la factura</span></label></li>
-</ul>
+  <ul class="tareas">
+    <li><label><input type="checkbox" checked><span>Enviar el presupuesto</span></label></li>
+    <li><label><input type="checkbox"><span>Llamar al cliente</span></label></li>
+    <li><label><input type="checkbox"><span>Revisar la factura</span></label></li>
+  </ul>
 </body>
 </html>

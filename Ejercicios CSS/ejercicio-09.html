@@ -4,6 +4,43 @@
 <meta charset="utf-8">
 <title>Ejercicio 9. La tabla de datos</title>
 <style>
+  table.pedidos {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  table.pedidos caption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #111827;
+  }
+
+  table.pedidos th, 
+  table.pedidos td {
+    padding: 12px;
+  }
+
+  table.pedidos thead th {
+    background-color: #4f46e5;
+    color: #ffffff;
+  }
+
+  table.pedidos tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  table.pedidos tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+
+  table.pedidos tfoot td {
+    font-size: 0.85rem;
+    color: #6b7280;
+    padding-top: 12px;
+  }
 </style>
 </head>
 <body>

@@ -4,6 +4,31 @@
 <meta charset="utf-8">
 <title>Ejercicio 15. El menú de pestañas</title>
 <style>
+
+  nav.pestanas {
+    display: flex;
+    gap: 16px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  nav.pestanas a {
+    text-decoration: none;
+    color: #6b7280;
+    padding-bottom: 8px;
+    font-size: 0.95rem;
+  }
+
+  nav.pestanas a.activa {
+    color: #4f46e5;
+    font-weight: bold;
+    border-bottom: 2px solid #4f46e5;
+    margin-bottom: -2px;
+  }
+
+  .contenido {
+    padding-top: 16px;
+    color: #374151;
+  }
 </style>
 </head>
 <body>

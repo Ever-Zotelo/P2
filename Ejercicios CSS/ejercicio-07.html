@@ -4,6 +4,42 @@
 <meta charset="utf-8">
 <title>Ejercicio 7. La barra de navegación</title>
 <style>
+
+  header.barra {
+    display: flex;                 
+    justify-content: space-between; /* Empuja el título a la izquierda del todo y el menú a la derecha del todo */
+    align-items: center;           
+    background-color: #4f46e5;     
+    padding: 12px 24px;            
+    color: #ffffff;
+  }
+
+  header.barra h1 {
+    margin: 0;                    
+    font-size: 1.25rem;            
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  header.barra ul {
+    display: flex;                
+    gap: 20px;                    
+    list-style: none;              
+    margin: 0;                    
+    padding: 0;                    
+  }
+
+  header.barra a {
+    color: #ffffff;                /* Enlaces en color claro */
+    text-decoration: none;         /* Elimina el subrayado predeterminado */
+    padding-bottom: 4px;           
+    transition: border-bottom 0.2s ease; /* Transición suave al pasar el ratón */
+  }
+
+  header.barra a:hover {
+    border-bottom: 2px solid #ffffff; 
+  }
+
 </style>
 </head>
 <body>
